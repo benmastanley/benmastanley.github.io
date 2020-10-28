@@ -20,18 +20,18 @@
 
     <!--NAV BAR CONTENT SECTION-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Ben Stanley</a>
+        <a class="navbar-brand" href="index.html">Ben Stanley</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Education<span class="sr-only">(current)</span></a>
-                </li>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Projects.html">Projects<span class="sr-only">(current)</span></a>
+				</li>
                 <li class="nav-item">
                     <a class="nav-link" href="Resume.html">Resume</a>
                 </li>
@@ -421,21 +421,21 @@
     </div>
 
 	<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active2");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active2");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+				content.style.maxHeight = null;
+				} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
 	
     <!-- Bootstrap core JavaScript
     ================================================== -->
