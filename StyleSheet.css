@@ -1,3 +1,7 @@
+.btn, .btn-primary{
+    /*position:absolute; 
+    bottom: 10px;*/
+}
 .collapsible {
     background-color: #777;
     color: white;
