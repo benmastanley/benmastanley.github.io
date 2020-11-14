@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" rel="stylesheet" href="StyleSheet.css">
 </head>
 
-<body style="background-color: whitesmoke;">
+<body style="background-color: rgb(240,240,240)">
 
     <!--NAV BAR CONTENT SECTION-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,7 +52,7 @@
             <div class="row" style="margin-top:15px;">
                 <div class="col" style="text-align:center;"><h2>Projects</h2></div>
             </div>
-            <div class="row" style="margin-top:15px; margin-bottom:10px;">
+            <div class="row" style="margin-top:10px; margin-bottom:10px;">
                 
                 <div class="col-md-6" style="text-align:center;">
                     <h5>University Projects</h5>
@@ -60,77 +60,195 @@
                         - Correlates to the modules in the 'Education' page where possible.
                     </h6>
                     
-                    <hr />
+                    <hr class="line">
 
                     <div class="row">
-                        <!--margin-left: auto; margin-right: auto;-->
-                        
-                        <div class="card col-md-5" style="width: 30rem; margin-left: auto; margin-right: auto; margin-top:5px;">
+                        <div class="card col-md-5">
                             <img class="card-img-top" src="Images/finance.jpg" alt="Financial Planning Application">
                             <div class="card-body">
                             <h5 class="card-title">Honours Stage Project</h5>
                             <h6>(2020)</h6>
-                            <p class="card-text">My project entailed the creation of a personal financial modelling package, including a responsive web app, 
-                                which enabled users to view income and expenditure transactions and subsequently visualise, categorise and understand 
-                                their financial information more effectively using graphs and analytical tools. The package was built using ASP.Net MVC and 
-                                Bootstrap (alongside HTML) for front end, with Entity Framework used for communication with the database holding all user 
-                                data and Azure the chosen platform for hosting the application. 
+                            <p class="card-text">My project entailed the creation of a personal financial modelling package,<span id="dots">...</span><span id="more">
+                                 including a responsive web app, which enabled users to view income and expenditure transactions and subsequently visualise, 
+                                categorise and understand their financial information more effectively using graphs and analytical tools. 
+                                The package was built using ASP.Net MVC and Bootstrap (alongside HTML) for front end, with Entity Framework used for 
+                                communication with the database holding all user data and Azure the chosen platform for hosting the application. </span> 
+                                <br>
+                                <button onclick="myFunction()" id="myBtn" class="btn btn-light">Read more</button>
                             </p>
-                            <a href="#" class="btn btn-primary" >View Code</a>
-                            <a href="#" class="btn btn-primary">View Report</a>
+                            
+                            <a href="#" class="btn btn-secondary" >Code</a>
+                            <a href="Projects/Honours Stage/Final Report.pdf" target="_blank" class="btn btn-secondary">Report</a></a>
 
                             </div>
                         </div>
-                        <br>
 
-                        <div class="card col-md-5" style="width: 30rem; margin-left:auto;  margin-right: auto; margin-top:5px;">
-                            <img class="card-img-top" src="Images/engineering.png" alt="Card image cap">
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="Images/engineering.png" alt="Card image cap" style="margin-top:5px;">
                             <div class="card-body">
                             <h5 class="card-title">Advanced Software Engineering</h5>
                             <h6>(2020)</h6>
                             <p class="card-text">Consisted of two Assessed Coursework (ACW) in the form of set questions and delivered as reports.</p>
-                            <a href="#" class="btn btn-primary" >ACW 1</a>
-                            <a href="#" class="btn btn-primary">ACW 2</a>
+                            <a href="Projects/Advanced Software Eng/Report.pdf" target="_blank" class="btn btn-secondary" >ACW 1</a>
+                            <a href="Projects/Advanced Software Eng/Final Report.pdf" target="_blank" class="btn btn-secondary">ACW 2</a>
                             <br>
                             </div>
                         </div>
                     </div>
-                    <br>
 
                     <div class="row">
-                        <!--margin-left: auto; margin-right: auto;-->
-                        
-                        <div class="card col-md-5" style="width: 30rem; margin-left: auto; margin-right: auto; margin-top:5px;">
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Distributed Systems</h5>
+                            <h6>(2020)</h6>
+                            <p class="card-text">________
+                            </p>
+                            <a href="Projects/Distributed Systems/Distributed ACW.zip" class="btn btn-secondary">ACW1</a>
+                            <a href="Projects/Distributed Systems/Distributed Report.pdf" target="_blank" class="btn btn-secondary">ACW2</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Data Mining and Decision Systems</h5>
+                            <h6>(2019/2020)</h6>
+                            <p class="card-text">__________
+                            </p>
+                            <a href="Projects/Data Mining/DM ACW Notebook (Final).ipynb" class="btn btn-secondary">Code</a>
+                            <a href="Projects/Data Mining/600092 ACW Report (Final).pdf" class="btn btn-secondary">Report</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Mobile Devices and Applications</h5>
+                            <h6>(2019/2020)</h6>
+                            <p class="card-text">________
+                            </p>
+                            <a href="Projects/Mobile Devices/acw.zip" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Agile</h5>
+                            <h6>(2019)</h6>
+                            <p class="card-text">__________
+                            </p>
+                            <a href="Projects/Agile/Group05.zip" class="btn btn-secondary">ACW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Networking and User Interface Design</h5>
+                            <h6>(2019)</h6>
+                            <p class="card-text">________
+                            </p>
+                            <a href="Projects/Networking and UI/Networking ACW.zip" class="btn btn-secondary">ACW</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Database Techniques </h5>
+                            <h6>(2019)</h6>
+                            <p class="card-text">__________
+                            </p>
+                            <a href="Projects/Database Techniques/Database ACW.pdf" class="btn btn-secondary">ACW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">E-Commerce and E-Business</h5>
+                            <h6>(2018)</h6>
+                            <p class="card-text">________
+                            </p>
+                            <a href="Projects/E-Commerce and E-Business/Website.zip" class="btn btn-secondary">ACW1</a>
+                            <a href="Projects/E-Commerce and E-Business/ECommerceACW2-1 (1).zip" class="btn btn-secondary">ACW2</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Software Engineering</h5>
+                            <h6>(2018)</h6>
+                            <p class="card-text">__________
+                            </p>
+                            <a href="Projects/Software Engineering/PageComposition (1).zip" class="btn btn-secondary">ACW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">Systems Analysis</h5>
+                            <h6>(2018)</h6>
+                            <p class="card-text">________
+                            </p>
+                            <a href="Projects/Systems Analysis/Group01.zip" class="btn btn-secondary">ACW</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-5">
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">________</h5>
+                            <h6>(2019)</h6>
+                            <p class="card-text">__________
+                            </p>
+                            <a href="Projects/" class="btn btn-secondary">ACW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card col-md-5">
                             <img class="card-img-top" src="Images/scissors.jpg" alt="Snippits">
                             <div class="card-body">
                             <h5 class="card-title">Snippits</h5>
                             <p class="card-text">A hair appointment booking application created using Visual Studio, 
                                 C# language, and ..... user interface...
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
                             </div>
                         </div>
 
-                        <div class="card col-md-5" style="width: 30rem; margin-left: auto;  margin-right: auto; margin-top:5px;">
+                        <div class="card col-md-5">
                             <img class="card-img-top" src="" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
                     
-                    <br>
-                    <div class="card" style="width: 30rem; margin-left: auto; margin-right: auto; margin-top:5px;;
-                    margin-right: auto;">
+                    <div class="card">
                         <img class="card-img-top" src="Images/battleships.png" alt="Battleships Game">
                         <div class="card-body">
                           <h5 class="card-title">Battleships Game</h5>
                           <p class="card-text">This project was completed in the first semester of year 1 from my time at the University of Hull.
                               This involved the creation of a basic battleships game application, which was created in visual studio for deployment
                                in a console window.</p>
-                          <a href="#" class="btn btn-primary">View</a>
+                          <a href="#" class="btn btn-secondary">View</a>
                         </div>
                     </div>
                     <br>
@@ -140,9 +258,10 @@
                     <h6>Projects that were completed in own time or similar to further personal development 
                         experience and solidify knowledge on certain topics / languages.
                     </h6>
-                    <hr />
+                    <hr class="line">
                     <ul style="text-align: left;">
                         <p><strong>Ideas:</strong></p>
+                        <li>Raspberry Pi!</li>
                         <li>Python book application</li>
                         <li>Product catalogue - add to cart etc</li>
                         <li>Web Scraper?</li>
@@ -173,6 +292,23 @@
         </div>
     </div>
 
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
