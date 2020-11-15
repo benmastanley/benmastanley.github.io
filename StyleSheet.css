@@ -75,22 +75,24 @@
     width: 100%;
     color: white;
     text-align: center;
-    
 }
 .profile {
     width: 300px;
     max-width: 100%;
-    padding: 10px;
+    /*padding: 10px;*/
     border-radius: 50%;
     margin: auto;
+    margin-bottom: 10px;
 }
 .hockey{
     width: 200px;
+    margin: auto;
     border-radius: 5%;
 }
 .mrrobot{
-    width: 300px;
-    border-radius: 1%;
+    width: 250px;
+    border-radius: 3%;
+    margin-top: 10px;
 }
 .scroll{
     scroll-behavior: smooth;
