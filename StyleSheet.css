@@ -76,6 +76,9 @@
     color: white;
     text-align: center;
 }
+.navbar{
+    /*position: fixed;*/
+}
 .profile {
     width: 300px;
     max-width: 100%;
