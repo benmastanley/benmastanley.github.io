@@ -125,15 +125,6 @@ h2 {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
 }
-/* .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  padding-top: 70px; /* Height of the navbar */
-} */
 
 .card-body {
   margin-top: 0px;
@@ -203,6 +194,10 @@ h2 {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+.content ul {
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
 body {
